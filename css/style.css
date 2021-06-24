@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+body{
+    font-family: "Lato",sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+
+/***********HEADER************/
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.logo{
+    font-size: 2rem;
+   font-weight: 900px;
+    color: white;
+}
+
+
+@media (max-width: 768px){
+     #display-1{
+        font-size: 1.5rem;
+        right:1rem
+     }
+    #hero-logo{
+        top:2rem
+    }
+    }
+
+
+@media (max-width: 360px){
+    
+   
+    #display{
+        font-size: 2rem;
+    }
+}
+@media (max-width:1100px){
+    #display-2{
+        font-size: 0.7rem;
+    }
+}
+
+header a {
+    color:white;
+   margin-left: 1.5rem;
+}
+header a:hover{
+    color:rgb(219, 212, 212)
+}
+header a:active{
+    color:orange
+}
+#menu-bar{
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+  color: white;
+}
+.solid-header{
+    position: fixed;
+    background-color: #c69572;
+   transition: 0.4s ease ;
+}
+
+/************************HERO*****************/
+
+
+#hero-section{
+background-image: url(../img/hero.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+   
+}
+#hero-section::before{
+  content: ""; 
+   position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    background:#4133329c;
+height: 100vh;
+    
+}
+#hero-logo{
+    width: 11rem;
+}
+#arrow-down{
+    position: absolute;
+    bottom: 4rem;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+   font-size: 10px;
+   width: 3rem;
+    color:white
+}
+/**********************INTRO SECTION*******************/
+#intro-section{
+    background: whitesmoke;
+}
+.icon{
+    width: 5rem;
+  
+
+}
+
+/***********************ABOUT SECTION************************/
+.about-bg-1{
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+}
+.about-bg-2{
+    background-image: url(../img/about1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: relative;
+    height: 640px;
+}
+
+
+@media (max-width: 768px) {
+    .about-bg-2::before{
+    content: ""; 
+   position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    background:#1a16169c;
+    
+    }
+    
+}
+
+
+
+    
+
+/*******************MENU SECTION************************/
+
+#menu-section{
+    background: #eae7de;
+}
+.img{
+    width: 240px;
+    height:180px;
+    border-radius: 50%;
+}
+
+/*******************CONTACT SECTION**********************/
+.contact-info-bg{
+    background-image:linear-gradient(to right,#36313782,#36313782), url(/img/contact-info.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 540px;
+}
+.contact-info-bg-2{
+    background:#201f2082 ;
+}
+
+/***************************MAP SECTION*******************/
+
+#map{
+    height: 470px;
+}
+.map-icon{
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************FOOTER*******************/
+footer{
+    background: #312423;
+}
+footer a i {
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+@media (max-width: 768px) {
+    footer{
+        text-align: center !important;
+    }
+    #social-icons{
+        text-align: center !important;
+        margin-top: 3px;
+    }
+}
+/**********************MOBILE-MENU***********************/
+#mobile-menu{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background:#312423ed;
+    z-index:2;
+    display: none;
+  
+}
+#mobile-menu a{
+    color: white;
+}
+#mobile-menu a:hover{
+    color:rgb(175, 171, 171)
+}
+#close{
+    font-size: 1.3rem;
+  position:absolute;
+  top: 11px;
+  right: 12px;
+  color: white
+  
+;}
